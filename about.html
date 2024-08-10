@@ -3,29 +3,84 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - My Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>About Us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/portfolio/styles/about.css">
+    <style>
+        /* Optional: Add some styles for the toggle button and hidden content */
+        #more-education {
+            display: none;
+        }
+
+        .toggle-btn {
+            color: #007BFF;
+            cursor: pointer;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-    <aside>
+    <header>
         <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </aside>
-    <main>
-        <section class="about">
-            <div class="container">
-                <h1>About Me</h1>
-                <p>This is the about page where you can provide more details about yourself.</p>
+            <div class="left">
+                <h1>Simrandeep's Portfolio</h1>
             </div>
-        </section>
-    </main>
-    <script src="scripts/script.js"></script>
+            <div class="right">
+                <ul>
+                    <li><a href="/portfolio/index.html">Home</a></li>
+                    <li><a href="/portfolio/about.html">About</a></li>
+                    <li><a href="/portfolio/project.html">Projects</a></li>
+                    <li><a href="/portfolio/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <div class="main-title">
+            <h2>About <span>Me</span><span class="bg-text">About Me</span></h2>
+        </div>
+        <div class="about-container">
+            <div class="about-left">
+                <h4>Who I Am </h4>
+                <p>Hey there! 👋 I'm Simrandeep Kaur, a third-year student at Lamrin Tech Skills University majoring in BTech CSE. I'm a passionate and curious individual with a strong interest in HTML, CSS, and PHP. Currently, I'm working on creating a personal portfolio website. I created this portfolio to showcase my skills, projects, and experiences in the field of web development. I'm always eager to learn and grow, and I'm excited to connect with people who share my passion for web development.</p>
+                
+                <h4>Future Goal</h4>
+                <p>In the future, I want to keep learning and improving as a web developer. I plan to get better at both front-end and back-end development so I can create great websites and applications. I’m excited about using new technologies like AI and blockchain in my work. I also want to get better at solving problems and keeping up with the latest trends in technology. Eventually, I hope to lead projects and help other developers learn and grow.</p>
+                
+                <h4>Education</h4>
+                <div class="content">
+                <p class="text">
+                    <strong>Lamrin Tech Skills University, Punjab</strong><br>
+                    Branch: CSE | Specialization: AI & ML
+                </p>
+                <p id="more-education" class="hidden-content">
+                    <strong>SENIOR SECONDARY SMART SCHOOL, 12TH</strong><br>
+                    Percentage: 90% || Stream: Non-Medical<br><br>
+                    <strong>Shri Guru Ram Rai Public School, Ghanuala, 10th</strong><br>
+                    Percentage: 85%
+                </p>
+                <button id="see-more-btn">See More</button>
+                </div>
+                <div class="skills">
+                    <h4>Skills</h4>
+                    <ul>
+                        <li><i class="fa-brands fa-html5"></i> HTML</li>
+                        <li><i class="fab fa-css3"></i> CSS</li>
+                        <li><i class="fa-brands fa-js"></i> JavaScript</li>
+                        <li><i class="fa-brands fa-python"></i> Pyhton</li>
+                        <li><i class="fa-brands fa-teamspeak"></i> Team Work</li>
+                    
+                    </ul>
+                </div>
+            </div>
+            <div class="about-right">
+                <img src="pic sim.jpeg" alt="Simrandeep's Picture">
+            </div>
+        </div>
+    </div>
+
+    <script src="/portfolio/scripts/seemore.js"></script>
+    
 </body>
 </html>

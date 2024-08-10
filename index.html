@@ -3,34 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - My Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>HOME</title>
+    <link rel="stylesheet" href="/portfolio/styles/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="left">
+            <h1>Simrandeep kaur</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/portfolio/index.html">Home</a></li>
+                    <li><a href="/portfolio/about.html">About</a></li>
+                    <li><a href="/portfolio/project.html">Projects</a></li>
+                    <li><a href="/portfolio/contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
+
     <main>
-        <section class="hero">
-            <div class="container">
-                <img src="pic sim.jpeg" alt="Profile Picture" class="profile-img">
-                <h1>Simrandeep Kaur</h1>
-                <p>Web Developer</p>
-                <a href="about.html" class="btn">Learn More About Me</a>
+        <section class="firstSection">
+            <div class="leftSection">
+                Hi, I am <span class="purple">Simrandeep</span>
+                <div>I am a passionate</div>
+                <span id="element"></span>
+            </div>
+            <div class="rightSection">
+                <img src="pic sim.jpeg" alt="">
+                <div class="resume-download" >
+                    <button id="download-btn"><i class="fa-solid fa-circle-arrow-down"></i> Resume</button>
+                </div>
+
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Simrandeep Kaur. All rights reserved.</p>
-    </footer>
-    <script src="scripts/script.js"></script>
+
+    <section class="secondSection">
+        <hr>
+        <h1>Skills</h1>
+        <div class="skills">
+            <div class="skill">
+                <h3>HTML</h3>
+            </div>
+            <div class="skill">
+                <h3>CSS</h3>
+            </div>
+            <div class="skill">
+                <h3>python</h3>
+            </div>
+            <div class="skill">
+                <h3>Problem Solving</h3>
+            </div>
+            <div class="skill">
+                <h3>Team Work</h3>
+            </div>
+        </div>
+    </section>
+    <script src="/portfolio/scripts/resume.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!--  Setup and Start animation -->
+    <script>let typed = new Typed('#element', {
+        strings: ['Web Developer'],
+        typeSpeed: 50,
+    }); 
+    </script>
 </body>
 </html>

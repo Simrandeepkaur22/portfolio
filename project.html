@@ -3,32 +3,42 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Projects - My Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>PROJECTS</title>
+    <link rel="stylesheet" href="/portfolio/styles/project.css">
 </head>
 <body>
     <header>
         <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="left">
+            <h1>Simrandeep Kaur's Portfolio</h1>
+            </div>
+            <div class="right">
+                <ul>
+                  <li><a href="/portfolio/index.html">Home</a></li>
+                  <li><a href="/portfolio/about.html">About</a></li>
+                  <li><a href="/portfolio/project.html">Projects</a></li>
+                  <li><a href="/portfolio/contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
-    <main>
-        <section class="projects">
-            <div class="container">
-                <h1>My Projects</h1>
-                <p>This is the projects page where you can showcase your work.</p>
+    <div class="main-content">
+        <div class="projects-container">
+            <h2>Our <span>Projects</span><span class="bg-text"></span></h2>
+        </div>
+        <div class="projects-container">
+            <div class="project-card">
+                <img src="/food.png" alt="Project 1">
+                <h3>Food Deleivery and time optimization</h3>
+                <div class="content">
+                    <p class="text">In this project, we focused on enhancing the efficiency and speed of food delivery services by employing advanced time optimization techniques.</p>
+                    <p class="hidden-content">goal was to minimize the time taken from order placement to delivery, thereby improving customer satisfaction and operational efficiency.</p>
+                    <button id="see-more-btn">See More</button>
+                </div>
             </div>
-        </section>
-    </main>
-    <footer>
-        <p>&copy; 2024 Simrandeep Kaur. All rights reserved.</p>
-    </footer>
-    <script src="scripts/script.js"></script>
+        
+        </div>
+    </div>
+    <script src="/portfolio/scripts/seemore.js"></script>
 </body>
 </html>

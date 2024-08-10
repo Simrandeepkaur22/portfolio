@@ -1,0 +1,273 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0A192F; /* Deep navy blue */
+    color: #E6F1FF; /* Light blue for text */
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Navigation Bar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4A4A4A; /* Grey */
+    height: 80px;
+    padding: 0 20px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #E6F1FF; /* Light blue for links */
+    font-size: 20px;
+    padding: 6px 12px;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #A8DADC; /* Light teal for hover effect */
+}
+
+/* Sections */
+.left {
+    font-size: 1.5rem;
+}
+
+.firstSection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 60px 0;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.firstSection > div {
+    width: 30%;
+}
+
+.leftSection {
+    font-size: 3rem;
+    animation: slideInFromLeft 1.5s ease-in-out;
+}
+
+.rightSection img {
+    width: 80%;
+    height: auto;
+    border-radius: 50%;
+    margin: 50px 0;
+    animation: zoomIn 1.5s ease-in-out;
+}
+
+.secondSection {
+    max-width: 80vw;
+    margin: auto;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.purple {
+    color: #A8DADC; /* Light teal */
+}
+
+#element {
+    color: #A8DADC; /* Light teal */
+}
+
+main hr {
+    border: 0;
+    background: #457B9D; /* Medium blue */
+    height: 1.2px;
+    margin: 40px 84px;
+}
+
+.skills {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin: 30px 0;
+    color: #457B9D; /* Medium blue */
+}
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 20px;
+    color: #E6F1FF;
+    background-color: #112240; /* Darker blue */
+    border: 2px solid #457B9D; /* Medium blue */
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.btn:hover {
+    background-color: #457B9D; /* Medium blue */
+    color: #112240; /* Darker blue */
+}
+
+.resume-download {
+    text-align: center;
+}
+
+#download-btn {
+    background-color: rgb(170, 107, 228); /* Lavender */
+    font-size: 1.2rem;
+    color: lavender;
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+#download-btn:hover {
+    background-color: rgb(18, 18, 62); /* Darker shade */
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        transform: translateX(-100%);
+    }
+    to {
+        transform: translateX(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        transform: scale(0.5);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Media Queries */
+
+/* Large desktops and laptops */
+@media (max-width: 1200px) {
+    nav ul li a {
+        font-size: 18px;
+        padding: 5px 10px;
+    }
+
+    .leftSection {
+        font-size: 2.5rem;
+    }
+
+    .rightSection img {
+        width: 70%;
+    }
+
+    .skills {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    main hr {
+        margin: 30px 70px;
+    }
+}
+
+/* Tablets and below */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 20px;
+    }
+
+    .firstSection {
+        flex-direction: column;
+        margin: 40px 0;
+    }
+
+    .firstSection > div {
+        width: 80%;
+        text-align: center;
+    }
+
+    .leftSection {
+        font-size: 2rem;
+    }
+
+    .rightSection img {
+        width: 60%;
+        margin: 30px 0;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+    }
+
+    main hr {
+        margin: 30px 40px;
+    }
+}
+
+/* Mobile devices */
+@media (max-width: 480px) {
+    nav {
+        height: 60px;
+        padding: 0 10px;
+    }
+
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li a {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+
+    .leftSection {
+        font-size: 1.5rem;
+    }
+
+    .rightSection img {
+        width: 50%;
+    }
+
+    .skills {
+        grid-template-columns: 1fr;
+    }
+
+    .btn {
+        padding: 6px 14px;
+        font-size: 14px;
+    }
+
+    main hr {
+        margin: 20px 20px;
+    }
+}

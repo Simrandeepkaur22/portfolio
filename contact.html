@@ -2,38 +2,105 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact - My Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <title>Contact</title>
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
-<body>
-    <aside>
+<body class="main-content">
+    <header>
         <nav>
-            <ul class="nav-list">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="projects.html">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
+            <div class="left">
+            <h1>Simrandeep's Portfolio</h1>
+            </div>
+            <div class="right">
+                <ul>
+                    <li><a href="/portfolio/index.html">Home</a></li>
+                    <li><a href="/portfolio/about.html">About</a></li>
+                    <li><a href="/portfolio/project.html">Projects</a></li>
+                    <li><a href="/portfolio/contact.html">Contact</a></li>
+                </ul>
+            </div>
         </nav>
-    </aside>
+    </header>
+
     <main>
-        <section class="contact">
-            <div class="container">
-                <h1>Contact Me</h1>
-                <form id="contact-form">
-                    <label for="name">Name</label>
-                    <input type="text" id="name" name="name" required>
-                    <label for="email">Email</label>
-                    <input type="email" id="email" name="email" required>
-                    <label for="message">Message</label>
-                    <textarea id="message" name="message" required></textarea>
-                    <button type="submit" class="btn">Submit</button>
-                </form>
+        <section class="container contact" id="contact">
+            <div class="main-title">
+                <h2>Contact <span>Me</span><span class="bg-text">Contact</span></h2>
+            </div>
+            <div class="contact-container">
+                <div class="left-contact">
+                    <h4>Contact Information</h4>
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Location</span>
+                            </div>
+                            <p>
+                                Ropar, Punjab, India
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </div>
+                            <p>
+                                simrandeepk352@gmail.com
+                            </p>
+                        </div>
+                        <div class="contact-item">
+                            <div class="icon">
+                                <i class="fas fa-phone"></i>
+                                <span>Phone</span>
+                            </div>
+                            <p>
+                                +91 7814304543
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-icons">
+                        
+                        <a href="#https://www.instagram.com/sim.ran_52/" class="icon">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/simrandeep-kaur-5452042a1/" class="icon">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/Simrandeepkaur22" class="icon">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="right-contact">
+                    <form action="" class="contact-form">
+                        <div class="input-control i-c-2">
+                            <input type="text" placeholder="Your Name" id="name">
+                            <input type="email" placeholder="Your Email" id="email">
+                        </div>
+                        <div class="input-control">
+                            <input type="text" placeholder="Subject" id="subject">
+                        </div>
+                        <div class="input-control">
+                            <textarea name="" id="message" cols="15" rows="8" placeholder="Message Here..."></textarea>
+                        </div>
+                        <div class="submit-btn">
+                            <button class="main-btn" type="submit" id submit>
+                                <span class="btn-text">Submit</span>
+                                <span class="btn-icon"><i class="fas fa-paper-plane"></i></span>
+                            </button>
+                        </div>
+                    </form>
+                </div>
             </div>
         </section>
     </main>
-    <script src="scripts/script.js"></script>
+    <script src="/portfolio/scripts/conactform.js"></script>
 </body>
 </html>
